@@ -38,7 +38,7 @@ const declaration:
     G) "3undefined", since undefined maps to the string "undefined" and "3" + "undefined" = "3undefined"
     H) NaN, since "3" maps to 3 for subtraction but undefined maps to NaN and subtraction involving NaN results in an answer of NaN
 14) A) true, since "2" becomes 2 and 2 > 1 is true
-    B) true, since the first string starts with "2" and the second string starts with "1," so lexicographically, "2" > "1" is true
+    B) false, since the first string starts with "2" and the second string starts with "1," and lexicographically, "2" < "1" is false, so "2" < "12" is false
     C) true, since "==" converts types when comparing, so "2" becomes 2 and 2 == 2 is true
     D) false, since "===" makes comparisons without type conversion, and since 2 is an integer and "2" is a string, 2 === "2" is false
     E) false, since true becomes 1 and 1 == 2 is false
