@@ -25,29 +25,45 @@ const declaration:
 10) At line 12, the number "3" will be printed because we initialized "length" as the length of "prices," and since we pass in [100, 200, 300] for prices, which has length 3, the value or "length" is "3." It is also initialized with "const," so it can't be reassigned or redeclared. Thus, when we print "length," it will print the number "3."
 11) This function will return the array of [50, 100, 150]. This is because at each iteration of the for loop, we push the current value of "discountedPrice" into the array "discounted" and we return this array at the end. Throughout the three iterations of the for loops, the values of "discountedPrice" are just half of the value at index i in the "prices" array, so at the end, the values "50", "100", and "150" are pushed into the "discounted" array. Since this function returns "discounted," it will return this array of [50, 100, 150]. Even though "discounted" was initialized using the const keyword and something is changed, no errors are returned because we are never reassigning or redeclaring "discounted," we are just adding to the array that it already points to. Thus, as mentioned before, the function will return the array of [50, 100, 150] without errors.
 12) A) student.name
+    
     B) student["Grad Year"]
+
     C) student.greeting()
+
     D) student["favorite teacher"].name
+
     E) student.courseLoad[0]
 13) A) "32", because the integer 2 maps to its string representation "2" and "3" + "2" is "32"
+14) 
     B) 1, since you can't subtract strings, so "3" becomes 3 and 3 - 2 = 1
+
     C) 3, since null maps to 0 and 3 + 0 = 3
+
     D) "3null", since null maps to the string "null" and "3" + "null" = "3null"
+
     E) 4, since true maps to 1 and 1 + 3 = 4
+
     F) 0, since false maps to 0 and null maps to 0 and 0 + 0 = 0
+
     G) "3undefined", since undefined maps to the string "undefined" and "3" + "undefined" = "3undefined"
+
     H) NaN, since "3" maps to 3 for subtraction but undefined maps to NaN and subtraction involving NaN results in an answer of NaN
-14) A) true, since "2" becomes 2 and 2 > 1 is true
-    B) false, since the first string starts with "2" and the second string starts with "1," and lexicographically, "2" < "1" is false, so "2" < "12" is false
+15) A) true, since "2" becomes 2 and 2 > 1 is true
+    
+    B) false, since the first string starts with "2" and the second string starts with "1," and lexicographically, "2" > "1" is false, so "2" < "12" is false
+
     C) true, since "==" converts types when comparing, so "2" becomes 2 and 2 == 2 is true
+
     D) false, since "===" makes comparisons without type conversion, and since 2 is an integer and "2" is a string, 2 === "2" is false
+
     E) false, since true becomes 1 and 1 == 2 is false
+    
     F) true, because Boolean(2) is true without conversion and true === true
-15) "==" checks equality with type conversions whereas "===" checks equality without type conversions
-16) part1b-question16.js
-17) The result will be "[2, 4, 6]." This is because when we pass in a number to "doSomething," it returns the number times 2. Thus, when calling "modifyArray" on "[1, 2, 3]" and "doSomething" (function stored in a variable), it creates a new array, "newArr." For each element in the array that is passed in, 1, 2, and 3, it passes this number into "doSomething," which returns the value doubled, and this new value is pushed in "newArr." Thus, "newArr" becomes an array that is just the array that is passed in except each value in the array that is passed in is doubled. This "newArr" is returned at the end of "modifyArray," giving us the result of "[2, 4, 6]" for this example.
-18) part1b-question18.js
-19) The output is as follow (the last line, 2, is printed 1 second after everything else):
+16) "==" checks equality with type conversions whereas "===" checks equality without type conversions
+17) part1b-question16.js
+18) The result will be "[2, 4, 6]." This is because when we pass in a number to "doSomething," it returns the number times 2. Thus, when calling "modifyArray" on "[1, 2, 3]" and "doSomething" (function stored in a variable), it creates a new array, "newArr." For each element in the array that is passed in, 1, 2, and 3, it passes this number into "doSomething," which returns the value doubled, and this new value is pushed in "newArr." Thus, "newArr" becomes an array that is just the array that is passed in except each value in the array that is passed in is doubled. This "newArr" is returned at the end of "modifyArray," giving us the result of "[2, 4, 6]" for this example.
+19) part1b-question18.js
+20) The output is as follow (the last line, 2, is printed 1 second after everything else):
     1
     4
     3
