@@ -34,7 +34,7 @@ const declaration:
 
     E) student.courseLoad[0]
 13) A) "32", because the integer 2 maps to its string representation "2" and "3" + "2" is "32"
-14) 
+ 
     B) 1, since you can't subtract strings, so "3" becomes 3 and 3 - 2 = 1
 
     C) 3, since null maps to 0 and 3 + 0 = 3
@@ -48,7 +48,7 @@ const declaration:
     G) "3undefined", since undefined maps to the string "undefined" and "3" + "undefined" = "3undefined"
 
     H) NaN, since "3" maps to 3 for subtraction but undefined maps to NaN and subtraction involving NaN results in an answer of NaN
-15) A) true, since "2" becomes 2 and 2 > 1 is true
+14) A) true, since "2" becomes 2 and 2 > 1 is true
     
     B) false, since the first string starts with "2" and the second string starts with "1," and lexicographically, "2" > "1" is false, so "2" < "12" is false
 
@@ -59,11 +59,11 @@ const declaration:
     E) false, since true becomes 1 and 1 == 2 is false
     
     F) true, because Boolean(2) is true without conversion and true === true
-16) "==" checks equality with type conversions whereas "===" checks equality without type conversions
-17) part1b-question16.js
-18) The result will be "[2, 4, 6]." This is because when we pass in a number to "doSomething," it returns the number times 2. Thus, when calling "modifyArray" on "[1, 2, 3]" and "doSomething" (function stored in a variable), it creates a new array, "newArr." For each element in the array that is passed in, 1, 2, and 3, it passes this number into "doSomething," which returns the value doubled, and this new value is pushed in "newArr." Thus, "newArr" becomes an array that is just the array that is passed in except each value in the array that is passed in is doubled. This "newArr" is returned at the end of "modifyArray," giving us the result of "[2, 4, 6]" for this example.
-19) part1b-question18.js
-20) The output is as follow (the last line, 2, is printed 1 second after everything else):
+15) "==" checks equality with type conversions whereas "===" checks equality without type conversions
+16) part1b-question16.js
+17) The result will be "[2, 4, 6]." This is because when we pass in a number to "doSomething," it returns the number times 2. Thus, when calling "modifyArray" on "[1, 2, 3]" and "doSomething" (function stored in a variable), it creates a new array, "newArr." For each element in the array that is passed in, 1, 2, and 3, it passes this number into "doSomething," which returns the value doubled, and this new value is pushed in "newArr." Thus, "newArr" becomes an array that is just the array that is passed in except each value in the array that is passed in is doubled. This "newArr" is returned at the end of "modifyArray," giving us the result of "[2, 4, 6]" for this example.
+18) part1b-question18.js
+19) The output is as follow (the last line, 2, is printed 1 second after everything else):
     1
     4
     3
